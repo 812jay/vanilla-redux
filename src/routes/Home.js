@@ -23,7 +23,7 @@ function Home({ toDos }) {
 }
 
 function getCurrentState(state) {
-  return { sexy: true };
+  return { toDos: state };
 }
 
 export default connect(getCurrentState)(Home);
