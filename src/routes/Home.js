@@ -22,8 +22,8 @@ function Home({ toDos }) {
   );
 }
 
-function getCurrentState(state) {
+function mapStateToProps(state) {
   return { toDos: state };
 }
 
-export default connect(getCurrentState)(Home);
+export default connect(mapStateToProps)(Home);
